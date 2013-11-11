@@ -43,7 +43,7 @@
         </style>
     </head>
     <body>
-        <h1>oliver.dev</h1>
+        <h1><?php echo $_SERVER['SERVER_NAME']; ?></h1>
 
 <?php
 $dirs = array_filter(glob('*'), 'is_dir');
