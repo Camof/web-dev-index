@@ -2,14 +2,19 @@
     <head>
         <style>
             @import url(http://reset5.googlecode.com/hg/reset.min.css);
-            html { background-color: #cccccc }
+            <?php
+                $bg = '#272822';
+                $fg = '#66d9df';
+                $hv = '#f9275d';
+            ?>
+            html { background-color: <?php echo $bg; ?> }
             body {
                 max-width: 576px;
                 margin: 50px auto;
-                background-color: #cccccc;
+                background-color: <?php echo $bg; ?>;
                 padding: 20px 10px;
                 font: 12px Monaco, monospace;
-                color: #666666;
+                color: <?php echo $fg; ?>;
                 line-height: 24px;
             }
             h1, h2, h3, h4, p, li, hr, a {
@@ -22,11 +27,11 @@
             }
             a {
                 text-decoration: none;
-                color: #666666;
+                color: <?php echo $fg; ?>;
             }
             a:hover {
                 text-decoration: none;
-                color: #999967;
+                color: <?php echo $hv; ?>;
             }
             .nav ul {
                 margin: 0;
